@@ -10,17 +10,13 @@
     "init:folders": "mkdir app modules",
     "init:files": "touch app/program.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "watch": "npm-run-all -p watch:*",
-    "watch:sass": "sass --watch sass:css",
-    "watch:bs": "browser-sync start --server --files css/*.css *.html --browser chrome"
+    "start": "node app/program.js"    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "jshint": "^2.9.5",
-    "node-sass": "^4.7.2",
+    "jshint": "^2.9.5",    
     "npm-run-all": "^4.1.2"
   }
 }
