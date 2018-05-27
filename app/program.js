@@ -1,5 +1,5 @@
 var OSinfo = require('../modules/OSinfo');
-console.log('Type: ' + '\n' + '- /exit to quit,' + '\n' + '- /version to show Node version,' + '\n' + '- /language to show system language,' + '\n' + '- /getOSinfo to show system info.')
+console.log('Type: ' + '\n' + '- /exit to quit,' + '\n' + '- /version to show Node version,' + '\n' + '- /language to show system language,' + '\n' + '- /getOSinfo to show system info.');
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function () {
@@ -22,6 +22,6 @@ process.stdin.on('readable', function () {
                 break;
             default:
                 process.stderr.write('Wrong instruction!\n');
-        };
+        }
     }
 });

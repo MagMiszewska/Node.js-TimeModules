@@ -5,18 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
-    "test:js": "globstar jshint js/*.js",
+    "test:js": "globstar jshint app/*.js modules/*.js",
     "init": "npm-run-all -s init:*",
     "init:folders": "mkdir app modules",
     "init:files": "touch app/program.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "start": "node app/program.js"    
+    "start": "node app/program.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jshint": "^2.9.5",    
+    "jshint": "^2.9.5",
     "npm-run-all": "^4.1.2"
+  },
+  "dependencies": {
+    "globstar": "^1.0.0"
   }
 }
